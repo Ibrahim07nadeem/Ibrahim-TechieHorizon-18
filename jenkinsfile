@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/Ibrahim07nadeem/Ibrahim-TechieHorizon-18.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo "Build Started"
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "Testing Started"
+            }
+        }
+    }
+}
